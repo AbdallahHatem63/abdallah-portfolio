@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>بيبو حاتم | مطور ويب</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: radial-gradient(circle at top left, #1f1f47, #0a0a23);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      text-align: center;
+      position: relative;
+      animation: fadeIn 2s ease;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://www.transparenttextures.com/patterns/stardust.png');
+      opacity: 0.2;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ffd700;
+      text-shadow: 0 0 10px #ffd700;
+      margin-bottom: 10px;
+      z-index: 2;
+    }
+
+    p {
+      color: #ddd;
+      font-size: 1.3em;
+      z-index: 2;
+    }
+
+    .btn {
+      margin-top: 20px;
+      background: #ffd700;
+      color: #000;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s;
+      z-index: 2;
+    }
+
+    .btn:hover {
+      background: #fff;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 60px 10%;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 2.2em;
+      color: #ffd700;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #1e1e30;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+      transition: 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+    }
+
+    .card h3 {
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #bbb;
+      font-size: 1.1em;
+    }
+
+    .contact {
+      background: linear-gradient(135deg, #111, #191940);
+      padding-bottom: 80px;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: #ffd700;
+      font-size: 1.2em;
+      transition: 0.3s;
+    }
+
+    .contact-links a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #ffd700;
+    }
+
+    footer {
+      background: #0a0a23;
+      padding: 20px;
+      text-align: center;
+      color: #888;
+      font-size: 0.9em;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>👋 أنا بيبو حاتم</h1>
+    <p>مطور ويب أصمم وأبرمج مواقع احترافية ومتنوعة</p>
+    <a href="#projects" class="btn">شاهد أعمالي</a>
+  </header>
+
+  <section id="projects">
+    <h2 class="title">🚀 مشاريعي</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>🚕 بوت تاكسي بدر</h3>
+        <p>بوت ذكي لحجز التاكسي وإدارة الطلبات بسهولة واحترافية.</p>
+      </div>
+      <div class="card">
+        <h3>🎓 Nova Education</h3>
+        <p>منصة تعليمية حديثة لتقديم الدروس والمحتوى التفاعلي.</p>
+      </div>
+      <div class="card">
+        <h3>🌐 Floop Top</h3>
+        <p>موقع اجتماعي بتصميم عصري وتجربة مستخدم مميزة.</p>
+      </div>
+      <div class="card">
+        <h3>🤖 موقع وبوت بينو</h3>
+        <p>نظام تفاعلي يجمع بين واجهة ويب وبوت ذكي.</p>
+      </div>
+      <div class="card">
+        <h3>💻 محرر الأكواد</h3>
+        <p>أداة قوية لتحرير الأكواد مباشرة من المتصفح.</p>
+      </div>
+      <div class="card">
+        <h3>🧱 صانع صفحات ويب</h3>
+        <p>أداة تتيح للمستخدمين إنشاء صفحات ويب بسهولة وسرعة.</p>
+      </div>
+      <div class="card">
+        <h3>🔗 صانع QR Code</h3>
+        <p>مولّد أكواد QR احترافي لروابط ومواقع ومنتجات.</p>
+      </div>
+      <div class="card">
+        <h3>✍️ موقع اكتبلي</h3>
+        <p>موقع بسيط يساعدك على كتابة نصوص ومشاركتها بسهولة.</p>
+      </div>
+      <div class="card">
+        <h3>🧠 Techspher Education</h3>
+        <p>منصة تعليمية تقنية تركز على البرمجة والتكنولوجيا الحديثة.</p>
+      </div>
+      <div class="card">
+        <h3>🛠 موقع خدماتي</h3>
+        <p>موقع شامل لعرض الخدمات الإلكترونية بطريقة منظمة.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="title">📩 تواصل معي</h2>
+    <div class="contact-links">
+      <a href="https://facebook.com" target="_blank">فيسبوك</a>
+      <a href="https://instagram.com" target="_blank">إنستجرام</a>
+      <a href="mailto:youremail@gmail.com">إيميل</a>
+      <a href="#">مشروعي القادم 🚀</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 - تصميم وبرمجة <strong>بيبو حاتم</strong> 💻🔥
+  </footer>
+</body>
+</html>
